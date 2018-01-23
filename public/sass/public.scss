@@ -1,0 +1,196 @@
+@charset "utf-8";
+$i: 6; //循环个数
+//将px 转化成rem
+@function px2rem($px, $base-font-size: 75px) {
+  @if (unitless($px)) {
+    //@warn "Assuming #{$px} to be in pixels, attempting to convert it into pixels for you";
+    @return px2rem($px + 0px); // That may fail.
+  } @else if (unit($px) == rem) {
+    @return $px;
+  }
+  @return ($px / $base-font-size) * 1rem;
+}
+//字体自适应还是用设计图的大小
+@mixin font-dpr($font-size){
+  font-size: $font-size / 2;
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+// 适应图片等，非字体类
+@mixin px-dpr($property, $size, $others:""){
+
+  #{$property}: $size / 2 #{$others};
+
+  [data-dpr="2"] & {
+    #{$property}: $size #{$others};
+  }
+
+  [data-dpr="3"] & {
+    #{$property}: $size * 1.5 #{$others};
+  }
+}
+//去除移动端点击阴影
+@mixin click_shade{
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent; /* For some Androids */;
+  -webkit-appearance:none;
+  border-radius: 0;
+  outline: none;
+}
+// box-sizing,overflow,width,height
+@mixin box_overflew{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+//溢出显示2行,超过当前显示
+@mixin overflow_public{
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient:vertical;
+}
+@mixin overflow_line($num){
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @if $num == 3 {
+    -webkit-line-clamp:3;
+    @include overflow_public;
+  }@else if $num == 2 {
+    -webkit-line-clamp:2;
+    @include overflow_public;
+  }@else {
+    white-space: nowrap;
+  }
+}
+//图片100%显示
+@mixin adapt_img{
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+//背景图片的设置
+@mixin bgImg($url,$bgwidth,$bgHeight,$site){
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: $bgwidth $bgHeight;
+  background-position: $site;
+}
+//ul li样式
+@mixin ul_style{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  li{
+    @extend ul_style;
+    list-style: none;
+  }
+}
+// a标签样式
+@mixin a_style($height){
+  display: block;
+  width: 100%;
+  height: $height;
+  overflow: hidden;
+  border: none;
+}
+//input默认样式
+@mixin input_public($width,$height,$bgCorlor,$radiuSize,$font_color){
+  display: block;
+  width: $width;
+  height: $height;
+  background-color: $bgCorlor;
+  @if $radiuSize != '' {
+    border-radius: $radiuSize;
+  }@else {
+    border-radius: 0;
+  }
+  outline: none;
+  text-align: center;
+  line-height: $height;
+  color: $font_color;
+}
+//清除浮动
+@mixin clearfix {
+  &:after {
+    clear: both;
+    content: '\20';
+    display: block;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+  }
+  *height: 1%;
+}
+//css 三角形,兼容所有浏览器（）
+@mixin arrow($direction,$size,$color){
+  font-size: 0;
+  width: 0;
+  height: 0;
+  line-height: 0;
+  overflow: hidden;
+  border-width: $size;
+  cursor: pointer;
+  @if $direction == top {
+    border-style: dashed dashed solid dashed;
+    border-color: transparent transparent $color transparent;
+    border-top: none;
+  }
+  @else if $direction == bottom {
+    border-style: solid dashed dashed dashed;
+    border-color: $color transparent transparent transparent;
+    border-bottom: none;
+  }
+  @else if $direction == left {
+    border-style: dashed solid dashed dashed;
+    border-color: transparent $color transparent transparent;
+    border-left: none;
+  }
+  @else if $direction == right {
+    border-style: dashed dashed dashed solid;
+    border-color: transparent transparent transparent $color;
+    border-right: none;
+  }
+}
+
+//循环
+@for $i from 1 to 6{
+
+}
+//获取第一个li
+@mixin first_li($margin_left,$margin_right){
+  li:first-child{
+    @if $margin_left != ''{
+      margin-left: $margin_left;
+    }@else if $margin_right != ''{
+      margin-right: $margin_right;
+    }
+  }
+}
+.btn{
+  @include input_public(100px,50px,red,'',#fff);
+  border: 1px solid saddlebrown;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

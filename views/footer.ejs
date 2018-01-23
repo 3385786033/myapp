@@ -1,0 +1,75 @@
+<footer class="sitemap">
+    <div class="category-title"></div>
+    <div class="sitemap-main">
+    <%for(var i = 0;i<7;i++){%>
+    <dl>
+        <dt><a href="javascript:;">男的</a></dt>
+        <dd><a href="javascript:;"><strong>CHUCK TAYLOR ALL STAR</strong></a></dd>
+        <dd><a href="javascript:;"><strong>CONVERSE CONS</strong></a></dd>
+        <dd><a href="javascript:;"><strong>JACK PURCELL</strong></a></dd>
+        <dd class="mgb"><a href="javascript:;"><strong>CHUCK II</strong></a></dd>
+        <dd><a href="javascript:;">踩的</a></dd>
+        <dd><a href="javascript:;">踩的</a></dd>
+        <dd><a href="javascript:;">踩的</a></dd>
+        <dd><a href="javascript:;">踩的</a></dd>
+    </dl>
+    <%}%>
+    </div>
+    <div class="foot">
+        <nav class="foot-nav">
+            <a href="javascript:;">关于我们</a>
+            <a href="javascript:;">帮助和购物指南</a>
+            <a href="javascript:;">法律声明</a>
+            <a href="javascript:;">使用规则</a>
+        </nav>
+        <div class="foot-logo"></div>
+        <p>@匡威体育用品（中国）有限公司 保留所有权利    沪ICP备11044134号-2</p>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="Floating">
+    <img src="/images/CustomFileDownloadServer.gif" alt="">
+</div>
+<script>
+    var oTop = document.getElementById("Floating");
+    var screenw = document.documentElement.clientWidth || document.body.clientWidth;
+    var screenh = document.documentElement.clientHeight || document.body.clientHeight;
+    oTop.style.left = screenw - oTop.offsetWidth - 50 +"px";
+    oTop.style.top = screenh - oTop.offsetHeight +"px";
+    window.onscroll = function(){
+        var scrolltop = document.documentElement.scrollTop || document.body.scrollTop;
+        oTop.style.top = screenh - oTop.offsetHeight + scrolltop -700 +"px";
+        oTop.style.transition = 'all .5s';
+    };
+    oTop.onclick = function(){
+       alert('还未实现');
+    }
+</script>
+<script src="/javascripts/public.js"></script>
+<script src="/javascripts/header.js"></script>
+
+
+</body>
+</html>

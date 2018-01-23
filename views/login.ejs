@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/login.css">
+    <script src="/javascripts/flexible.js"></script>
+    <script src="/javascripts/public.js"></script>
+</head>
+<body>
+<div class="Login">
+    <section class="Login-Content">
+        <div class="Login-Main">
+            <a href="javascript:;"class="Login-log"><img src="/images/headerLogo-zhb.png" alt=""></a>
+            <h1 class="Login-title">LOGIN</h1>
+            <input type="text" placeholder="Phone Number" class="Main-phone" maxlength="11">
+            <div class="Main-verifCode">
+                <input type="text" placeholder="Code" class="Main-code" maxlength="6"id="code">
+                <input type="button"value="Gel Code" class="Main-sendCode">
+            </div>
+            <p class="Main-Msg">
+                <label>
+                    <input name="Fruit" type="checkbox"/>
+                    <span class="background_zn "></span>
+                </label>
+                <span>l've read and agreed</span>
+            </p>
+            <a href="/home" class="Main-loginBtn">LOGIN</a>
+        </div>
+    </section>
+</div>
+<script src="/javascripts/login.js"></script>
+</body>
+</html>

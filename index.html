@@ -2,43 +2,23 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>websocket</title>
 </head>
 <body>
-      <input type="text">
-      <input type="submit" id="btn">
-      <input type="button" id="Imgs" value="dianji">
-</body>
+<input type="text" id="inputVal">
+<input type="button" onclick="sendMessage()"value="点击">
 <script>
-    var xmlhttp;
-    function Ajax(method, url, asyn,param) {
-        if(window.XMLHttpRequest){
-            xmlhttp = new XMLHttpRequest();
-        }else{
-            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-        }
-        if(method == 'GET'){
-            url = url+'?'+param;
-        }
-        xmlhttp.open(method,url,asyn);
-        if(method == 'GET'){
-            xmlhttp.send();
-        }else {
-            xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xmlhttp.send(param);
-        }
-        xmlhttp.onreadystatechange = function () {
-            if(xmlhttp.status == 200 && xmlhttp.readyState == 4){
-                document.write(xmlhttp.responseText);
-            }
-        };
-    }
-    document.getElementById('btn').onclick = function () {
-        //base64解码与编码
-        var imf = './client/images/dog.jpg';
-        var enc = window.btoa(imf);
-        var uls = 'Imgurl='+enc;
-        Ajax('post','/foo',true,uls);
+    var ws = new WebSocket('ws://localhost:8181');
+    ws.open = function (e) {
+      console.log('Connection to server opened'+e);
     };
+    ws.onmessage = function (e) {
+      var data = JSON.parse(e.data);
+      console.log(data);
+    };
+    function sendMessage() {
+      ws.send(document.getElementById('inputVal').value);
+    }
 </script>
+</body>
 </html>

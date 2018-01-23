@@ -1,0 +1,222 @@
+<%- include header %>
+<%- include register %>
+<link rel="stylesheet" href="/favicon/user/iconfont.css">
+<link rel="stylesheet" href="/favicon/search/iconfont.css">
+<link rel="stylesheet" href="/stylesheets/home.css">
+<div class="content" style="overflow-x: hidden">
+    <div class="banner"id="banner">
+        <div class="banner-lister" id="bannerList">
+            <a href="/classActive" class="on"><img src="/images/bannerImg.jpg" alt=""></a>
+            <a href="/classActive"><img src="/images/bannerImg1.jpg" alt=""></a>
+            <a href="/classActive"><img src="/images/bannerImg2.jpg" alt=""></a>
+            <a href="/classActive"><img src="/images/bannerImg3.jpg" alt=""></a>
+            <a href="/classActive"><img src="/images/bannerImg4.jpg" alt=""></a>
+            <a href="/classActive"><img src="/images/bannerImg5.jpg" alt=""></a>
+        </div>
+        <div class="slide" id="slideBtn">
+            <span><strong>SLAM JAM</strong></span>
+            <span>不是谁都懂</span>
+            <span><strong>ONE STAR</strong></span>
+            <span>冬日出街</span>
+            <span>逆风行动</span>
+            <span>至简冬季</span>
+        </div>
+        <a href="javascript:;" class="arrow"id="prev">&lt;</a>
+        <a href="javascript:;" class="arrow"id="next">&gt;</a>
+    </div>
+</div>
+<div class="Main">
+    <div class="brand-segments">
+        <div class="category-title">
+            <h1>热卖单品</h1>
+        </div>
+        <ul class="clearfix">
+            <%for(var i = 0;i<item.length;i++){%>
+                <li>
+                    <div class="bs-container">
+                        <h1><%= titleh1[i] %></h1>
+                        <a href="/commodity"><img src="<%= item[i] %>" alt=""></a>
+                    </div>
+                </li>
+            <%}%>
+        </ul>
+        <div class="line">
+            <div class="brand-menu"></div>
+        </div>
+        <div class="l-s-grid">
+            <div class="product-list-slide">
+                <%for(var i = 0;i<4;i++){%>
+                <dl class="brand-product">
+                    <dt><a href="javascript:;"><img src="<%= clothing[i] %>" alt=""></a></dt>
+                    <dd class="p-l-name">
+                        <a href="javascript:;">【男女同款】Essentials Backpack 双肩包</a>
+                    </dd>
+                    <dd class="p-l-price">¥539.00</dd>
+                </dl>
+                <%}%>
+            </div>
+            <div class="product-list-slide noborder">
+                <%for(var i = 0;i<4;i++){%>
+                <dl class="brand-product">
+                    <dt><a href="javascript:;"><img src="/images/101503007_1B_NEW.png" alt=""></a></dt>
+                    <dd class="p-l-name">
+                        <a href="javascript:;">【男女同款】Essentials Backpack 双肩包</a>
+                    </dd>
+                    <dd class="p-l-price">¥539.00</dd>
+                </dl>
+                <%}%>
+            </div>
+        </div>
+        <div class="viewAll-button">
+            <a href="javascript:;"class="">查看所有穿的最新商品</a>
+        </div>
+    </div>
+    <div class="brand-segments">
+        <div class="category-title">
+            <h1>新品推荐</h1>
+        </div>
+        <div class="l-s-grid">
+            <div class="product-list-slide">
+                <%for(var i = 0;i<4;i++){%>
+                <dl class="brand-product">
+                    <dt><a href="javascript:;"><img src="<%= clothing[i] %>" alt=""></a></dt>
+                    <dd class="p-l-name">
+                        <a href="javascript:;">【男女同款】Essentials Backpack 双肩包</a>
+                    </dd>
+                    <dd class="p-l-price">¥539.00</dd>
+                </dl>
+                <%}%>
+            </div>
+            <% for(var l = 0;l<3;l++){%>
+            <div class="product-list-slide">
+                <%for(var i = 0;i<4;i++){%>
+                <dl class="brand-product">
+                    <dt><a href="javascript:;"><img src="/images/101503007_1B_NEW.png" alt=""></a></dt>
+                    <dd class="p-l-name">
+                        <a href="javascript:;">【男女同款】Essentials Backpack 双肩包</a>
+                    </dd>
+                    <dd class="p-l-price">¥539.00</dd>
+                </dl>
+                <%}%>
+            </div>
+            <%if(l ==2){%>
+            <div class="product-list-slide noborder">
+                <%for(var i = 0;i<4;i++){%>
+                <dl class="brand-product">
+                    <dt><a href="javascript:;"><img src="/images/101503007_1B_NEW.png" alt=""></a></dt>
+                    <dd class="p-l-name">
+                        <a href="javascript:;">【男女同款】Essentials Backpack 双肩包</a>
+                    </dd>
+                    <dd class="p-l-price">¥539.00</dd>
+                </dl>
+                <%}%>
+            </div>
+            <%}%>
+            <%}%>
+        </div>
+    </div>
+    <!--街头先型-->
+    <div class="homecontent-bottom">
+        <div class="specialfeature">
+            <p class="specialfeature-title"><img src="/images/logo-icon.png" alt=""><span>街头先型</span></p>
+            <div class="specialfeature-main">
+                <div class="specialfeature-content product-left">
+                    <a href="javascript:;">
+                        <img src="/images/tout-jp-171201.jpg" alt="">
+                        <div class="mask"></div>
+                    </a>
+                    <h1>不是谁都懂</h1>
+                    <p>
+                        <strong>Jack Purcell Modern</strong>系列，为开口笑爱好者们呈现的重磅鞋款。鞋面采用<strong>thinsulate</strong>牛皮材质，带来柔软舒适感。低帮款式，鞋头依旧沿用经典的“开口笑”弧度，荧光色搭配，与荧光色内里相呼应，展现了开口笑的魅力。细缝 Phylon 中底，打造简约的摩登外观与舒适穿着体验。
+                    </p>
+                    <div class="buy-button">
+                        <a href="javascript:;" class="">
+                            查看更多
+                        </a>
+                    </div>
+                </div>
+                <div class="specialfeature-content product-right">
+                    <a href="javascript:;">
+                        <img src="/images/tout-allstar-171201.jpg" alt="">
+                        <div class="mask"></div>
+                    </a>
+                    <h1>不是谁都懂</h1>
+                    <p>
+                        Jack Purcell Modern系列，为开口笑爱好者们呈现的重磅鞋款。鞋面采用thinsulate牛皮材质，带来柔软舒适感。低帮款式，鞋头依旧沿用经典的“开口笑”弧度，荧光色搭配，与荧光色内里相呼应，展现了开口笑的魅力。细缝 Phylon 中底，打造简约的摩登外观与舒适穿着体验。
+                    </p>
+                    <div class="buy-button">
+                        <a href="javascript:;" class="">
+                            查看更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--至酷精选 玩转潮流-->
+        <div class="specialfeature botn">
+            <p class="specialfeature-title"><img src="/images/logo-icon.png" alt=""><span>至酷精选 玩转潮流</span></p>
+            <div class="specialfeature-main specialfeature-main-two">
+                <div class="specialfeature-content specialfeature-two">
+                    <a href="javascript:;" class="product">
+                        <img src="/images/tout-jp-171201.jpg" alt="">
+                        <div class="mask"></div>
+                    </a>
+                    <h1>不是谁都懂</h1>
+                    <p>
+                        <strong>Jack Purcell Modern</strong>系列，为开口笑爱好者们呈现的重磅鞋款。鞋面采用<strong>thinsulate</strong>牛皮材质，带来柔软舒适感。低帮款式，鞋头依旧沿用经典的“开口笑”弧度，荧光色搭配，与荧光色内里相呼应，展现了开口笑的魅力。细缝 Phylon 中底，打造简约的摩登外观与舒适穿着体验。
+                    </p>
+                    <div class="buy-button">
+                        <a href="javascript:;" class="">
+                            查看更多
+                        </a>
+                    </div>
+                </div>
+                <div class="specialfeature-content specialfeature-two">
+                    <a href="javascript:;" class="product">
+                        <img src="/images/tout-jp-171201.jpg" alt="">
+                        <div class="mask"></div>
+                    </a>
+                    <h1>不是谁都懂</h1>
+                    <p>
+                        <strong>Jack Purcell Modern</strong>系列，为开口笑爱好者们呈现的重磅鞋款。鞋面采用<strong>thinsulate</strong>牛皮材质，带来柔软舒适感。低帮款式，鞋头依旧沿用经典的“开口笑”弧度，荧光色搭配，与荧光色内里相呼应，展现了开口笑的魅力。细缝 Phylon 中底，打造简约的摩登外观与舒适穿着体验。
+                    </p>
+                    <div class="buy-button">
+                        <a href="javascript:;" class="">
+                            查看更多
+                        </a>
+                    </div>
+                </div>
+                <div class="specialfeature-content specialfeature-two">
+                    <a href="javascript:;" class="product">
+                        <img src="/images/tout-jp-171201.jpg" alt="">
+                        <div class="mask"></div>
+                    </a>
+                    <h1>不是谁都懂</h1>
+                    <p>
+                        <strong>Jack Purcell Modern</strong>系列，为开口笑爱好者们呈现的重磅鞋款。鞋面采用<strong>thinsulate</strong>牛皮材质，带来柔软舒适感。低帮款式，鞋头依旧沿用经典的“开口笑”弧度，荧光色搭配，与荧光色内里相呼应，展现了开口笑的魅力。细缝 Phylon 中底，打造简约的摩登外观与舒适穿着体验。
+                    </p>
+                    <div class="buy-button">
+                        <a href="javascript:;" class="">
+                            查看更多
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/*******/-->
+    <div class="information">
+        <h1>关注CONVERSE</h1>
+        <p><strong>Converse</strong>同时活跃在各类社交网络平台，点击下列你所喜爱的常用社交平台，密切关注<strong>Converse</strong>的最新产品与资讯。</p>
+        <nav class="information-link">
+            <a href="https://weibo.com/chinaconverse?is_hot=1" class="weibo"></a>
+            <a href="javascript:;" class="wechat"></a>
+            <a href="http://e.t.qq.com/conversecn?pgv_ref=smart.0.0.conversecn" class="qqwb"></a>
+            <a href="http://page.renren.com/converse?checked=true" class="renren"></a>
+            <a href="https://site.douban.com/converse/" class="douban"></a>
+        </nav>
+    </div>
+</div>
+<script src="/javascripts/home.js"></script>
+<%- include popup %>
+<%- include footer %>

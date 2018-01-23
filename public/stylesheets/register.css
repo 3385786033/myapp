@@ -1,0 +1,82 @@
+.registers {
+  display: none;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden; }
+  .registers form {
+    max-width: 1000px;
+    height: 317px;
+    margin: 0 auto;
+    padding: 40px 0; }
+    .registers form dl, .registers form dl dd ul {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      box-sizing: border-box; }
+      .registers form dl dd ul {
+        overflow: hidden; }
+        .registers form dl dd ul li {
+          float: left;
+          height: auto;
+          overflow: hidden;
+          width: 30%;
+          margin-right: 5%;
+          font-size: 14px; }
+          .registers form dl dd ul li b {
+            color: red; }
+          .registers form dl dd ul li div {
+            width: 100%;
+            box-sizing: border-box;
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+            margin: 10px 0 25px 0; }
+            .registers form dl dd ul li div input {
+              display: block;
+              padding: 5px 5px 5px 18px;
+              width: 100%;
+              height: 100%;
+              box-sizing: border-box;
+              overflow: hidden; }
+          .registers form dl dd ul li div .gender {
+            color: #000;
+            cursor: pointer;
+            float: left;
+            text-align: left;
+            text-indent: 30px;
+            width: 50%;
+            position: relative;
+            box-sizing: border-box;
+            margin: 0; }
+          .registers form dl dd ul li div .gender:before {
+            background: url(/public/images/cart-sprite1.png) no-repeat scroll -3px -181px transparent;
+            border: 2px solid #000;
+            width: 18px;
+            height: 18px;
+            margin-top: -10px; }
+          .registers form dl dd ul li .labelbox {
+            height: 40px; }
+            .registers form dl dd ul li .labelbox input {
+              width: 47.5%;
+              float: left; }
+            .registers form dl dd ul li .labelbox input:last-child {
+              margin-left: 5%; }
+        .registers form dl dd ul li:last-child {
+          margin: 0; }
+        .registers form dl dd ul .reg-sub {
+          font-size: 12px; }
+          .registers form dl dd ul .reg-sub a {
+            color: #666666; }
+          .registers form dl dd ul .reg-sub .btns {
+            margin-top: 12px;
+            display: block;
+            width: 100%;
+            height: 40px;
+            background-color: black;
+            color: #fff;
+            font-size: 18px;
+            text-align: center;
+            line-height: 40px; }
+
+/*# sourceMappingURL=register.css.map */

@@ -1,0 +1,88 @@
+#Floating{
+    width: 88px;
+    height: 88px;
+    border-radius: 5px;
+    position: absolute;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: black;
+}
+.sitemap{
+    width: 100%;
+    height: auto;
+    margin: 80px auto 0 auto;
+    overflow: hidden;
+}
+.category-title{
+    height: 30px;
+    width: 1000px;
+    margin: 20px auto;
+    position: relative;
+}
+/*.category-title::before{*/
+    /*background-color: #b7b7b7;*/
+    /*content: "";*/
+    /*height: 1px;*/
+    /*left: 1.5%;*/
+    /*position: absolute;*/
+    /*top: 15px;*/
+    /*width: 97%;*/
+/*}*/
+.sitemap-main{
+    width: 1000px;
+    margin: 0 auto;
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+.sitemap dl{
+    width: 24%;
+    display: inline-block;
+    text-align: center;
+    font-size: 14px;
+    min-height: 280px;
+}
+
+.sitemap dl a:hover{
+    color: #999999;
+    text-decoration: none;
+}
+.sitemap dl dt{
+    margin-bottom: 20px;
+}
+.sitemap dl dt a{
+    font-size: 16px;
+    font-weight: bold;
+}
+.mgb{
+    margin-bottom: 20px;
+}
+.foot{
+    width: 100%;
+    height: 150px;
+    background-color: black;
+    color: #fff;
+}
+.foot-nav{
+    padding: 18px 0;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+.foot-nav a{
+    color: #fff;
+    margin: 0 10px;
+}
+.foot-logo{
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    background-image: url("../images/foot-logo.png");
+    background-size: 65px 50px;
+    background-repeat: no-repeat;
+}
+.foot p{
+   text-align: center;
+    font-size: 16px;
+}

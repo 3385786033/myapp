@@ -1,0 +1,202 @@
+.head{
+    height: 170px;
+    background-color: black;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.head .head-top{
+    width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.head .head-top .headTop-nav{
+    float: left;
+    line-height: 60px;
+}
+.head .head-top .headTop-nav a{
+    color: #ffffff;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.head .head-top .top-other{
+    width: 300px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: right;
+}
+.head-top .top-other .top-form{
+    width: 86px;
+    height: 100%;
+    float: left;
+    line-height: 50px;
+    overflow: hidden;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.head .head-top .login{
+    color: #fff;
+    cursor: pointer;
+}
+.head .head-top .seg{
+    margin: 0 6px;
+}
+.head .head-top .register{
+    color: #fff;
+    cursor: pointer;
+}
+.head .head-top .top-user{
+    height: 50px;
+    width: 50px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 3px;
+    text-align: center;
+    cursor: pointer;
+}
+.head .head-top .top-user .icon-usered{
+    font-size: 30px;
+}
+.head .head-top .top-user .icon-usered:hover{
+    color: #e7e1cd;
+}
+.head-top .top-other .top-cartNumber{
+    width: 90px;
+    height: 100%;
+    float: left;
+    font-size: 14px;
+    line-height: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.top-cartNumber-span:hover{
+    text-decoration: underline;
+}
+.head-top .top-other .top-cart-num{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: right;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 30px;
+    box-sizing: border-box;
+    background-color: #940000;
+}
+.head-top .top-other .top-search{
+    float: right;
+    height: 100%;
+    width: 30px;
+    overflow: hidden;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.head-top .top-other .top-search .icon-search{
+    font-size: 30px;
+}
+.head .head-button{
+    height: 50px;
+    overflow: hidden;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+    width: 1200px;
+    display: none;
+    position: relative;
+    margin: 10px auto 0 auto;
+}
+.head .head-button .input-search::-webkit-input-placeholder{
+    font-size: 16px;
+}
+@keyframes heightTop{
+    from{ opacity: 0}to{ opacity: 1}
+}
+.head .head-button .input-search{
+    width: 950px;
+    height: 100%;
+    outline: none;
+    font-size: 16px;
+    border: 3px solid;
+    padding-left: 20px;
+    float: left;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.head .head-button .search-btn{
+    width: 50px;
+    height: 99%;
+    float: left;
+    position: absolute;
+    border: 1px solid #940000;
+    background: url("../images/search.png") no-repeat;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-radius: 2px;
+    right: 250px;
+    background-color: #940000;
+    background-position: center;
+}
+.head .head-logo{
+    width: 1200px;
+    height: 188px;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*漂浮*/

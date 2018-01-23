@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+
+    <link rel="stylesheet" href="/stylesheets/footer.css">
+    <script src="/javascripts/flexible.js"></script>
+</head>
+<body>
+<header class="head">
+    <div class="head-top">
+        <nav class="headTop-nav">
+            <a href="javascript:;">About PIM PET</a>
+            <a href="javascript:;">Our Brands</a>
+            <a href="javascript:;">Partner With US</a>
+            <a href="javascript:;">New&Events</a>
+        </nav>
+        <div class="top-other">
+            <form action="" class="top-form">
+                <span class="login">登录</span>
+                <span class="seg">/</span>
+                <span class="register" id="register">注册</span>
+            </form>
+            <div class="top-user">
+                <i class="iconfont icon-usered"></i>
+            </div>
+            <div class="top-cartNumber">
+                <span class="top-cartNumber-span">购物车</span>
+                <div class="top-cart-num">0</div>
+            </div>
+            <div class="top-search">
+                <i  class="iconfont icon-search"></i>
+            </div>
+        </div>
+    </div>
+    <div class="head-button">
+        <input type="text" class="input-search"placeholder="想找点什么">
+        <input type="button" class="search-btn">
+    </div>
+</header>
+<script>
+    var register = document.getElementById('register');
+    register.onclick = function (ev) {
+        document.getElementsByClassName('registers')[0].style.display = 'block';
+    }
+</script>
+<% include baiduSup %>

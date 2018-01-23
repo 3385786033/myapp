@@ -1,0 +1,15 @@
+.btn {
+  display: block;
+  width: 100px;
+  height: 50px;
+  background-color: red;
+  border-radius: 0;
+  outline: none;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  border: 1px solid saddlebrown;
+  padding: 0;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=public.css.map */

@@ -1,0 +1,14 @@
+<% include header%>
+<style>
+    .classActive{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+</style>
+<div class="classActive">
+    <% for(var i = 0;i<pc_Img.length;i++){%>
+    <img src="<%= pc_Img[i] %>" alt="">
+    <%}%>
+</div>
+<% include footer%>
